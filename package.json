@@ -1,7 +1,7 @@
 {
-  "name": "angular1.4-ES6-material-webpack-boilerplate",
+  "name": "angular1.5-ES6-material-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "A simple AngularJS 1.4 boilerplate using ES6, material design and webpack",
+  "description": "A simple AngularJS 1.5 boilerplate using ES6, material design and webpack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,6 +21,7 @@
     "angular": "~1.5.9",
     "angular-animate": "~1.5.9",
     "angular-aria": "~1.5.9",
+    "angular-chart.js": "^1.1.1",
     "angular-material": "^1.1.1",
     "angular-ui-router": "^0.2.18",
     "font-awesome": "^4.3.0"
