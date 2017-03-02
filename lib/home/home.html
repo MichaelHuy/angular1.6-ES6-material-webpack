@@ -1,6 +1,39 @@
 <div layout="column">
 <canvas id="line" class="chart chart-line" chart-data="home.data" chart-labels="home.labels" chart-series="home.series" chart-options="home.options" chart-dataset-override="home.datasetOverride" chart-click="home.onClick" </canvas>
-    
+</div>
+<div layout="row">
+<p>
+        
+        vm.labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; <br>
+        vm.series = ['Series A', 'Series B'];<br>
+        vm.data = [
+          [65, 59, 20, 81, 56, 55, 40, 28, 48, 40, 19, 86],
+          [28, 48, 40, 19, 86, 27, 90, 65, 59, 20, 81, 56]
+        ];<br>
+
+        
+        vm.datasetOverride = [{
+          yAxisID: 'y-axis-1'
+        }, {
+          yAxisID: 'y-axis-2'
+        }];<br>
+        vm.options = {
+          scales: {
+            yAxes: [{
+              id: 'y-axis-1',
+              type: 'linear',
+              display: true,
+              position: 'left'
+            }, {
+              id: 'y-axis-2',
+              type: 'linear',
+              display: true,
+              position: 'right'
+            }]
+          }
+        };<br>
+        
+    </p>
 </div>
 <md-fab-speed-dial md-open="demo.isOpen" md-direction="up" class="md-scale md-hover-full" ng-mouseenter="demo.isOpen=true" ng-mouseleave="demo.isOpen=false">
     <md-fab-trigger>
